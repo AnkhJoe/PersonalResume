@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Resume</h1>
+    </header>
+    <section id="basic-info">
+        <h2>Basic Information</h2>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td>LI Bowen 李渤汶</td>
+                <td rowspan="5"><img src="profile.jpg" alt="Profile Picture" class="profile-pic"></td>
+            </tr>
+            <tr>
+                <td>Birth year and month:</td>
+                <td>2000.09</td>
+            </tr>
+            <tr>
+                <td>Tel:</td>
+                <td>59560495</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>lbwjn@firefox.com</td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td>Jinan ShanDong China</td>
+            </tr>
+        </table>
+    </section>
+    <section id="education">
+        <h2>Educational background</h2>
+        <p>2019-2023: XinJiang University Computer Science - Bachelor Degree</p>
+        <p>2024-now: Polytechnic University of HongKong Information Technology - Master of Science Degree </p>
+    </section>
+    <section id="experience">
+        <h2>Project Experience</h2>
+        <div class="project" onclick="openProjectDetails('project-details1.html')">
+            <p>Huawei Labs: ISCSI Storage Sharing Solution based on Huawei OpenEuler </p>
+            <p>Result: Huawei China University Students ICT Competition Program Preliminary Advancement</p>
+        </div>
+        <div class="project" onclick="openProjectDetails('project-details2.html')">
+            <p>Project: JuChuang crowdsourcing service platform</p>
+            <p>Result: The Seventh China International “Internet Plus” Innovation and Entrepreneurship Competition for College Students Third Prize at Provincial Level</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Coding Languages: Java, C++, C#, Python</li>
+            <li>Hobbies: photography, reading, listening to music, history, gaming</li>
+            <li>Others: Data Analysis SPSS, Copywriting, Office, <a href="https://www.bilibili.com/video/BV1R54y127w6/?share_source=copy_web&vd_source=1c79da96f2bc61d43f1696ea6549778d" target="_blank" >Video Editing,</a> Unity Game Creation</li>
+        </ul>
+    </section>
+    <section id="certificates">
+        <h2>Awards Experience</h2>
+        <div class="certificate" onclick="toggleCertificateDetails(this, 'cert1-details')">
+            <p>National Mathematical Modeling Competition for College Students First Prize at Provincial Level</p>
+            <div id="cert1-details" class="certificate-details" style="display: none;">
+                <p><strong>Entry date: </strong>October 2021</p>
+                <p><strong>Main tasks: </strong>python data analysis data visualization, SPSS data analysis data prediction</p>
+                <p><strong>Evaluation and planning model for ordering and transportation of raw materials in manufacturing companies:</strong></p>
+                <p>Based on the TOPSIS method, Markov prediction and goal planning theory, the minimum supplier model, the most economical ordering model, the minimum loss transfer model, the ordering and transferring model with compressed production cost and the production capacity improvement model are respectively established, so as to formulate the ordering plan and transferring plan for the enterprise under different conditions.</p>
+                <img src="gaojiaobei.png" width="50%" alt="GaoJiaoBei Certification" class="cert-image">
+            </div>
+        </div>
+        <div class="certificate" onclick="toggleCertificateDetails(this, 'cert2-details')">
+            <p>First Prize of “Huashu Cup” National University Students Mathematical Modeling Competition.</p>
+            <div id="cert2-details" class="certificate-details" style="display: none;">
+                <p><strong>Entry date: </strong>August 2021</p>
+                <p><strong>Main tasks: </strong>python data analysis data visualization, SPSS data analysis data prediction</p>
+                <p><strong> Customer sales program based on GA-BP model: </strong></p>
+                <p>The research on electric vehicle customer mining and sales decision making is a very meaningful issue, which has anrapid growth has important implications. Companies not only need to improve customer satisfaction with their products and make changes to the performance of thebut also to make more personalized sales plans to customers for the sales of cars. Therefore, the main goal of this paper is tocomprehensively analyze the cleaned data to extract the factors that most influence customers to buy electric cars, and to utilizethese factors to establish a set of reasonable and effective customer mining model for different brands of electric cars.
+                    </p>
+                <img src="huashubei.JPG" width="50%" alt="HuaShuBei Certification" class="cert-image">
+            </div>
+        </div>
+    </section>
+    <section id="self-evaluation">
+        <h2>Self-assessment</h2>
+        <p>In terms of specialisation, I have a solid foundation in programming and master programming languages such as Java, Python and C++. Familiar with commonly used algorithms and data structures, understand the basic principles of computer networks and application technologies, and be able to implement basic computer programme design and development.</p>
+        <p>In study and practice, able to identify problems quickly, analyse and summarise them, formulate effective solutions and implement them.</p>
+        <p>In teamwork, excellent communication and collaboration skills, able to work actively with others to solve problems and complete tasks.</p>
+        <p>In terms of academics, I actively participates in various computer-related competitions and activities, and has my own unique experience and insights in overcoming difficult problems. At the same time, I have a strong interest in electronic products in my private life, and I am good at accepting new things, and I can learn and absorb new knowledge quickly, but I don't exclude mechanical repetitive work, and I have a strong adaptability to all kinds of work.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 LI Bowen resume </p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        function openProjectDetails(detailsPage) {
+            window.location.href = detailsPage;
+        }
+    </script>
+</body>
+</html>
